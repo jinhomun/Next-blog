@@ -1,0 +1,108 @@
+
+.list__wrap {
+    padding: 20px;
+    display: grid;
+    height: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+    @media (max-width: 1000px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 800px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 500px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+ 
+    >:hover {
+        background: linear-gradient(180deg, rgba(22,22,22,1) 11%, rgba(11,67,135,1) 42%, rgba(0,116,255,1) 63%);
+    }
+    >div {
+        border: 1px solid rgb(225, 231, 245);
+        padding: 24px 20px;
+        border-radius: 10px;
+     
+        .cate {
+            padding: 3px 8px;
+            background: rgb(236, 253, 242);
+            color: rgb(52, 194, 106);
+            border-radius: 4px;
+            font-size: 14px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        &:nth-child(2n) {
+            .cate {
+                background: rgb(255, 237, 248);
+                color: rgb(211, 64, 153)
+            }
+        }
+
+        &:nth-child(3n) {
+            .cate {
+                background: rgb(255, 239, 237);
+                color: rgb(211, 80, 65)
+            }
+        }
+
+        .title {
+            font-size: 17px;
+            line-height: 1.6;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: var(--white);
+
+            &:hover {
+                text-decoration: underline;
+                text-underline-position: under;
+            }
+        }
+
+        .desc {
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .auth {
+            font-size: 14px;
+            position: relative;
+            color: var(--white);
+            // padding-left: 30px;
+
+            // &::before {
+            //     content: '';
+            //     width: 20px;
+            //     height: 20px;
+            //     background-color: rgb(100, 70, 255);
+            //     position: absolute;
+            //     left: 0;
+            //     top: 0;
+            //     border-radius: 50%;
+            // }
+        }
+    .date {
+            color: var(--white);
+        }
+    }
+
+}
+
+
+.login__header {
+    border-top: 1px solid var(--white);
+    color: var(--white);
+    padding: 50px 0;
+    text-align: center;
+
+    h3 {
+        font-size: 50px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+}
