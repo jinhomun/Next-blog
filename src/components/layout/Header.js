@@ -1,12 +1,15 @@
 import Link from "next/link";
 
-export default  function Header() {
+export default function Header() {
     return (
         <header id='header' role='banner'>
             <div className='left'>
                 <h1 className='logo'>
                     <Link href="/"> Jins blog</Link>
                 </h1>
+                <button id="darkModeButton">
+                    <a>🌕</a>
+                </button>
             </div>
             <nav className='nav'>
                 <ul>
@@ -15,9 +18,6 @@ export default  function Header() {
                     </li>
                     <li>
                         <Link href="/blog">Blog</Link>
-                    </li>
-                    <li>
-                        <Link href="/blogWrite">Write</Link>
                     </li>
                     <li>
                         <Link href="/notice">Notice</Link>
@@ -33,7 +33,9 @@ export default  function Header() {
                         <Link href="/join">회원가입</Link>
                     </li>
                 </ul>
+
             </div>
+
         </header >
-        )
+    )
 }

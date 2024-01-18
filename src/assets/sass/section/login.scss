@@ -31,10 +31,18 @@
 
             button {
                 border-radius: 5px;
+                border: 1px solid #fff;
                 background-color: var(--black);
                 width: 100%;
                 padding: 18px 20px;
                 color: var(--white);
+                margin-bottom: 5px;
+                display: flex;
+                justify-content: center;
+
+                .svg {
+                    margin-right: 10px;
+                }
             }
 
             textarea {

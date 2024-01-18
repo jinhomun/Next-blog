@@ -1,11 +1,11 @@
 import Link from "next/link";
 
-export default function blogDetail() {
+export default function noticeDetail() {
     return (
         <div className='detail__wrap'>
             <>
                 <div className='detail__title'>
-                    <span className='cate'>교육</span>
+                    <span className='cate'>공지사항</span>
                     <h3>편하게 글 작성해봐요.</h3>
                     <div className="info">
                         <span className='auth'>Jins</span>
@@ -57,9 +57,9 @@ export default function blogDetail() {
                 <div className='detail__btn'>
                     <button className="like">❤</button>
                     <div className="right">
-                        <button><Link href="/blogModify">수정</Link></button>
+                        <button><Link href="/noticeModify">수정</Link></button>
                         <button>삭제</button>
-                        <button><Link href="/blog">목록</Link></button>
+                        <button><Link href="/notice">목록</Link></button>
                     </div>
                 </div>
 

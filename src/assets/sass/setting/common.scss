@@ -1,12 +1,17 @@
 body {
     background-image: url("../../img/bg01.jpg");
 }
+
 main {
     min-height: 80vh;
 }
+
 #main {
-    min-height: 80vh; 
+    min-height: 100vh;
 }
+
+
+
 
 // 섹션 공통 요소
 section {
@@ -86,7 +91,8 @@ section {
 .list__search {
     display: flex;
     align-items: center;
-    justify-content: center; /* Add this line to center horizontally */
+    justify-content: center;
+    /* Add this line to center horizontally */
 
     input {
         padding: 5px;
@@ -97,7 +103,7 @@ section {
         width: 500px;
 
         &:focus {
-            border-color: #007bff;
+            border-color: #fff700;
         }
     }
 
@@ -108,6 +114,17 @@ section {
         border: none;
         border-radius: 3px;
         cursor: pointer;
+
+
+    }
+
+    :hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .write {
+        margin-left: 5px;
     }
 }
 
@@ -128,7 +145,18 @@ section {
         cursor: pointer;
 
         &:hover {
-            background-color: #0056b3; // Change the color to your preferred hover color
+            background-color: #ffffff; // Change the color to your preferred hover color
+            color: #000;
         }
+    }
+
+
+    .cate {
+        margin-left: 20px;
+        padding: 5px 10px;
+        border-radius: 3px;
+        background: #000;
+        color: #fff;
+        border: 1px solid #fff;
     }
 }

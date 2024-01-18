@@ -1,9 +1,9 @@
-export default function blogModify() {
+export default function noticeWrite() {
     return (
         <div className='blog__wrap'>
             <div className="blog__header">
-                <h3>blog Modify</h3>
-                <p>글을 수정하시겠습니까?</p>
+                <h3>notice Write</h3>
+                <p>글을 작성하시겠습니까?</p>
             </div>
             <form className='blog__form'>
                 <fieldset>

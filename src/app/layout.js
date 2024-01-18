@@ -1,6 +1,5 @@
 import '../assets/sass/style.sass'
 import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
 
 export const metadata = {
   title: 'Create Next App',
@@ -13,7 +12,6 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
-        <Footer />
       </body>
 
     </html>
