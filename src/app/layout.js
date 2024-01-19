@@ -1,3 +1,4 @@
+import Footer from '@/components/layout/Footer';
 import '../assets/sass/style.sass'
 import Header from "@/components/layout/Header";
 
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
 
     </html>

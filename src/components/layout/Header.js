@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 export default function Header() {
+
     return (
         <header id='header' role='banner'>
             <div className='left'>
@@ -33,7 +34,14 @@ export default function Header() {
                         <Link href="/join">회원가입</Link>
                     </li>
                 </ul>
+            </div>
 
+            <div class="m_menu">
+                <a class="menu-trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
             </div>
 
         </header >

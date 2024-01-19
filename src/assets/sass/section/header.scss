@@ -6,6 +6,8 @@
     align-items: center;
     justify-content: space-between;
 
+
+
     .left {
         display: flex;
         align-items: center;
@@ -34,6 +36,10 @@
 
     .nav {
         margin-right: 10px;
+
+        @media (max-width: 800px) {
+            display: none;
+        }
 
         ul {
             display: flex;
@@ -70,6 +76,10 @@
     .right {
         margin-right: 10px;
 
+        @media (max-width: 800px) {
+            display: none;
+        }
+
 
         ul {
             display: flex;
@@ -94,6 +104,69 @@
             }
         }
     }
+
+    /* 모바일 햄버거 */
+    .m_menu {
+        display: none;
+
+        @media (max-width: 800px) {
+            display: flex;
+            font-size: 1.7rem;
+            z-index: 99;
+            margin-right: 10px;
+        }
+    }
+
+    .menu-trigger,
+    .menu-trigger span {
+        display: inline-block;
+        transition: all 0.4s;
+        box-sizing: border-box;
+    }
+
+    .menu-trigger {
+        position: relative;
+        width: 26px;
+        height: 20px;
+    }
+
+    .menu-trigger span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+
+    .menu-trigger span:nth-of-type(1) {
+        top: 0;
+    }
+
+    .menu-trigger span:nth-of-type(2) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .menu-trigger span:nth-of-type(3) {
+        bottom: 0;
+    }
+
+    /* 2th bar 사라지고,  1st 3rd bar 회전하며 X  */
+
+    .menu-trigger.active-1 span:nth-of-type(1) {
+        transform: translateY(9px) rotate(-45deg);
+    }
+
+    .menu-trigger.active-1 span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .menu-trigger.active-1 span:nth-of-type(3) {
+        transform: translateY(-8px) rotate(45deg);
+    }
+
+
 
 
 }

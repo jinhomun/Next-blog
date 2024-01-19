@@ -78,7 +78,7 @@ export default function blog() {
                     </div>
 
                 </div>
-                <div className='list'>
+                {/* <div className='list'>
                     <span className='cate'>교육</span>
                     <h3 className='title'>
                         <Link href="/blogDetail">편하게 글 작성해봐요.</Link>
@@ -185,7 +185,7 @@ export default function blog() {
                         </div>
                     </div>
 
-                </div>
+                </div> */}
 
 
 
